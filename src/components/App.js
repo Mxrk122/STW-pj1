@@ -1,15 +1,17 @@
 import React from 'react'
 import '../Assets/Styles/app.scss'
+import AsideBar from './AsideBar'
+import Content from './Content'
+import FriendsList from './FriendsList'
 
 function App() {
-
-  const suma = 5 + 6
-
   return (
-    <div className = 'app'>
-        <h1>{suma}</h1>
+    <div className="app">
+      <AsideBar />
+      <Content />
+      <FriendsList />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

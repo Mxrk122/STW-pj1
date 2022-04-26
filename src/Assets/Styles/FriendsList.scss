@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$body-color: #000000;
+$text-color: #FFFFFF;
+$unselected-text-color: #B3B3B3;
+$font: 'Raleway', sans-serif;
+
+.friends-list{
+    
+    min-width: 30px;
+    width: 270px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.friends-header{
+    font-family: $font;
+    color: $unselected-text-color;
+    font-size: 30px;
+    font-weight: 500;
+    height: 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    padding-top: 25px;
+}
+
+.friends-header > h1{
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.add-friend{
+    font-size: 18px;
+}
+
+.friend{
+    margin-top: 20px;
+    font-family: $font;
+    color: $unselected-text-color;
+    margin-left: 15px;
+    height: 50px;
+    background-color: #20449C;
+    flex-wrap: wrap;
+
+    display: flex;
+    flex-direction: row;
+    padding-left: 8px;
+}
+
+.friend > img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.info > p{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.info > h1{
+    font-size: 14px;
+    margin-top: px;
+    padding: 0;
+    margin: 0;
+}
+
+.song-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.song-info > p{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.song-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 13px;
+}
+
+.song-box > p{
+    font-size: 13px;
+}

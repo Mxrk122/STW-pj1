@@ -7,7 +7,7 @@
         "plugin:react/recommended",
         "airbnb",
         "plugin:jsx-a11y/recommended",
-        "plugin:react-hooks/recommended",  
+        "plugin:react-hooks/recommended"  
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -21,7 +21,11 @@
         "jsx-a11y",
         "react-hooks"
     ],
+
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "semi": ["error", "never"],
+        "linebreak-style": 0,
+        "react/prop-types": "off"
     }
 }
