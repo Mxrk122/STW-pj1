@@ -5,12 +5,28 @@ $unselected-text-color: #B3B3B3;
 $font: 'Raleway', sans-serif;
 
 .friends-list{
-    
+    background-color: $body-color;
     min-width: 30px;
     width: 270px;
-
+    min-width: 270px;
+    
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+}
+
+.friends-list::-webkit-scrollbar{
+    width: 12px;
+    background-color: $body-color;
+}
+.friends-list::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0.2);
+}
+.friends-list::-webkit-scrollbar-thumb{
+    background-color: #4D4D4D;;
+}
+.friends-list::-webkit-scrollbar-thumb:hover{
+    background-color: #808080;
 }
 
 .friends-header{
@@ -37,43 +53,53 @@ $font: 'Raleway', sans-serif;
     font-size: 18px;
 }
 
+.add-friend:hover{
+    color: $text-color;
+}
+
 .friend{
-    margin-top: 20px;
+    margin-top: 25px;
     font-family: $font;
     color: $unselected-text-color;
     margin-left: 15px;
-    height: 50px;
-    background-color: #20449C;
+    height: 60px;
+    
     flex-wrap: wrap;
 
     display: flex;
     flex-direction: row;
-    padding-left: 8px;
+    padding-left: 11px;
 }
 
 .friend > img{
-    height: 40px;
-    width: 40px;
+    height: 42px;
+    width: 42px;
     border-radius: 100%;
+}
+
+.last-activity{
+    position: absolute;
+    margin-left: 170px;
+    font-size: 11px;
+    font-weight: 600;
 }
 
 .info{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     margin-left: 10px;
-}
-
-.info > p{
-    font-size: 12px;
-    padding: 0;
-    margin: 0;
 }
 
 .info > h1{
     font-size: 14px;
-    margin-top: px;
     padding: 0;
     margin: 0;
+}
+
+.info > h1:hover{
+    text-decoration: underline;
+    color: $text-color;
 }
 
 .song-info{
@@ -84,18 +110,32 @@ $font: 'Raleway', sans-serif;
 }
 
 .song-info > p{
-    font-size: 12px;
+    font-size: 10px;
     padding: 0;
     margin: 0;
+    font-weight: 600;
+}
+
+.song-info > p:hover{
+    text-decoration: underline;
+    color: $text-color;
 }
 
 .song-box{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     height: 13px;
+    margin-top: 3px;
 }
 
 .song-box > p{
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.song-box > p:hover{
+    text-decoration: underline;
+    color: $text-color;
 }

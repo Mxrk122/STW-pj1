@@ -10,12 +10,28 @@ function FriendsList() {
       nickname: 'El canaca',
       song: 'Patricio estrella',
       artist: 'Steven',
+      lastaActivity: '5 h',
     },
     {
       photo: 'https://wikirock.net/wp-content/uploads/2020/12/rs-3616-rectangle.jpg',
       nickname: 'Dimebag Darrel',
       song: 'I´m Broken',
       artist: 'Pantera',
+      lastaActivity: '3 h',
+    },
+    {
+      photo: 'https://wikirock.net/wp-content/uploads/2020/12/rs-3616-rectangle.jpg',
+      nickname: 'Dimebag Darrel',
+      song: 'I´m Broken',
+      artist: 'Pantera',
+      lastaActivity: '3 h',
+    },
+    {
+      photo: 'https://wikirock.net/wp-content/uploads/2020/12/rs-3616-rectangle.jpg',
+      nickname: 'Dimebag Darrel',
+      song: 'I´m Broken',
+      artist: 'Pantera',
+      lastaActivity: '3 h',
     },
   ]
   return (

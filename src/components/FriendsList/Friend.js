@@ -18,6 +18,7 @@ function Friend({ friend }) {
           <IoIosMusicalNotes />
           <p>{friend.song}</p>
         </div>
+        <div className="last-activity">{friend.lastaActivity}</div>
       </div>
     </div>
   )
