@@ -1,16 +1,17 @@
 import React from 'react'
 import '../Assets/Styles/Content.scss'
 import Header from './Content/Header'
+import RecentlyPlayed from './Content/RecentlyPlayed'
+import SongsList from './Content/SongsList'
 
-function Content() {
+function Content({
+  recentlyList, slone, sltwo, slthree, slfour, slfive,
+}) {
   return (
     <div className="content">
       <Header />
-      <h1>Buenas tardes</h1>
-      <h1>Buenas tardes</h1>
-      <h1>Buenas tardes</h1>
-      <h1>Buenas tardes</h1>
-      <h1>Buenas tardes</h1>
+      <RecentlyPlayed list={recentlyList} />
+      <SongsList slTitle="Vuelve a tu música" slData={slone} />
     </div>
   )
 }
