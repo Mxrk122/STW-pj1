@@ -24,7 +24,7 @@ function App() {
     },
     {
       portrait: 'https://i.discogs.com/rWhAvEIfe8oxfsr6ueU4NK1-VopLI6zt1vnvGFYIoQo/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3ODcy/NzktMTU0NTA3MTc3/Mi03NTQ2LmpwZWc.jpeg',
-      title: 'Blindfolds Aside',
+      title: 'Blindfolds Aside Blindfolds Aside Blindfolds Aside',
     },
     {
       portrait: 'https://www.nacionrock.com/wp-content/uploads/R-400083-1325240634.jpeg.jpg',
@@ -36,26 +36,32 @@ function App() {
     {
       portrait: 'https://m.media-amazon.com/images/I/718khrgr5bL._SL1400_.jpg',
       title: 'We Major',
+      artist: 'Kanye West',
     },
     {
       portrait: 'https://nacionprogresiva.files.wordpress.com/2019/01/press_cover_01.jpg',
       title: 'Mediocrity Wins',
+      artist: 'Leprous',
     },
     {
       portrait: 'https://m.media-amazon.com/images/I/81iabVrElHL._SL1425_.jpg',
       title: 'I´m Broken',
+      artist: 'Pantera',
     },
     {
       portrait: 'https://canchageneral.com/wp-content/uploads/2019/12/Cursor-COVER.jpg',
       title: '1539 N. Calvert',
+      artist: 'JPEGMAFIA',
     },
     {
       portrait: 'https://i.discogs.com/rWhAvEIfe8oxfsr6ueU4NK1-VopLI6zt1vnvGFYIoQo/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3ODcy/NzktMTU0NTA3MTc3/Mi03NTQ2LmpwZWc.jpeg',
-      title: 'Blindfolds Aside',
+      title: 'Blindfolds Aside ',
+      artist: 'Protest the Hero',
     },
     {
       portrait: 'https://www.nacionrock.com/wp-content/uploads/R-400083-1325240634.jpeg.jpg',
       title: 'The Drapery Falls',
+      artist: 'Opeth',
     },
   ]
 

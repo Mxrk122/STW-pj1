@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 $body-color: #000000;
 $text-color: #FFFFFF;
+$buttons-important-things: #1ED760;
+$selected-button: #1FDF64;
 $unselected-text-color: #B3B3B3;
 $font: 'Raleway', sans-serif;
 
@@ -9,7 +11,7 @@ $font: 'Raleway', sans-serif;
     font-size: 100px;
     height: 100vh;
     width: 100%;
-    background: #151515;
+    background: #121212;
     font-family: $font;
 
     overflow-y: scroll;
@@ -158,17 +160,42 @@ $font: 'Raleway', sans-serif;
 }
 
 .song-container > p{
+    width: 238px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
     margin-left: 16px;
     font-weight: bold;
     font-size: 16px;
 }
 
-.container:hover .play-button{
-    display: flex;
+.play-button{
+    height: 50px;
+    width: 50px;
+    background-color: $buttons-important-things;
+    font-size: 18px;
+
+    display: none;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.container .play-button{
-    display: none;
+.play-button:hover{
+    background-color: $selected-button;
+    height: 52px;
+    width: 52px;
+}
+
+//Condicion para que aparezca el botond e play cuando se le apsa por encima a todo el padre
+.song-container:hover > .play-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle{
+    margin-left: 3px;
 }
 
 /*Estilos de cada lista de canciones*/
@@ -178,7 +205,99 @@ $font: 'Raleway', sans-serif;
     margin-left: 30px;
 }
 
-.song-list > h1{
-    font-size: 35px;
+.list-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.list-header > h1{
+    
+    font-size: 22px;
     margin: 0;
+}
+
+.list-header > h1:hover{
+    text-decoration: underline;
+}
+
+.list-header > p{
+    margin: 0;
+    font-size: 12px;
+    width: 100px;
+    font-weight: 750;
+    color: $unselected-text-color;
+}
+
+.list-header > p:hover{
+    text-decoration: underline;
+}
+
+
+/*Filas de canciones*/
+.cards-grid{
+    margin-top: 15px;
+    width: 100%;
+    height: 266px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(188px, 188px));
+    grid-template-rows: repeat(auto-fit, minmax(266px, 266px));
+    grid-gap: 24px;
+}
+
+.song-card{
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+    overflow: hidden;
+
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.song-card:hover{
+    background-color: #282828;
+}
+
+.song-card > img{
+    width: 155px;
+    height: 155px;
+    margin: 17px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info-song-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 34px;
+}
+
+.info-song-card > h1{
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.info-song-card > p{
+    font-size: 14px;
+    margin: 0;
+    margin-top: 8px;
+    color: $unselected-text-color;
+}
+
+//Condicion para que aparezca el botond e play cuando se le apsa por encima a todo el padre
+.song-card:hover > .play-button{
+    position: absolute;
+    margin-top: 114px;
+    margin-left: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

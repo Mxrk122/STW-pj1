@@ -77,6 +77,10 @@ $font: 'Raleway', sans-serif;
     border-radius: 100%;
 }
 
+.friend >img:hover{
+    opacity: 0.6;
+}
+
 .last-activity{
     position: absolute;
     margin-left: 170px;
