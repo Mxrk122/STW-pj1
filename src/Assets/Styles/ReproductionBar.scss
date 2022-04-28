@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$body-color: #000000;
+$secondary-color: #181818;
+$text-color: #FFFFFF;
+$buttons-important-things: #1ED760;
+$selected-button: #1FDF64;
+$unselected-text-color: #B3B3B3;
+$font: 'Raleway', sans-serif;
+
+
+.reproduction-bar{
+    position: fixed;
+    width: 100%;
+    height: 92px;
+    background-color: $secondary-color;
+    bottom: 0;
+    font-family: $font;
+    color: $text-color;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.song-playing{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.song-playing > img {
+    height: 56px;
+    width: 56px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.song-playing-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 14px;
+}
+
+.song-playing-info > h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.song-playing-info > p {
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+}

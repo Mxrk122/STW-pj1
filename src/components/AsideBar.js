@@ -1,6 +1,7 @@
 import React from 'react'
 import IconSquare from './AsideBar/IconSquare'
 import PlaylistList from './AsideBar/PlaylistList'
+import SpaceCreator from './Utility/SpaceCreator'
 import '../Assets/Styles/AsideBar.scss'
 
 function AsideBar() {
@@ -80,6 +81,7 @@ function AsideBar() {
     <div className="aside-bar">
       <IconSquare />
       <PlaylistList list={playlistlist} />
+      <SpaceCreator height={92} />
     </div>
   )
 }

@@ -283,9 +283,17 @@ $font: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 16px;
     margin: 0;
+    width: 156px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .info-song-card > p{
+    width: 156px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     font-size: 14px;
     margin: 0;
     margin-top: 8px;
