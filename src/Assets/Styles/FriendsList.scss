@@ -12,7 +12,6 @@ $font: 'Raleway', sans-serif;
     
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
 }
 
 .friends-list::-webkit-scrollbar{
@@ -57,7 +56,13 @@ $font: 'Raleway', sans-serif;
     color: $text-color;
 }
 
+.list{
+    overflow-y: scroll;
+    height: 800px;
+}
+
 .friend{
+    position: relative;
     margin-top: 25px;
     font-family: $font;
     color: $unselected-text-color;

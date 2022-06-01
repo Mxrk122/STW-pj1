@@ -3,7 +3,7 @@ import '../../Assets/Styles/Content.scss'
 import SpaceCreator from '../Utility/SpaceCreator.js'
 import SongCard from './SongCard'
 
-function SongsList({ slTitle, slData }) {
+function SongsList({ slTitle, slData, playSong }) {
   return (
     <div className="song-list">
       <SpaceCreator height={46} />
@@ -13,7 +13,7 @@ function SongsList({ slTitle, slData }) {
       </div>
       <div className="cards-grid">
         {
-        slData.map((song) => <SongCard song={song} />)
+        slData.map((song) => <SongCard song={song} playSong={playSong} />)
         }
       </div>
     </div>

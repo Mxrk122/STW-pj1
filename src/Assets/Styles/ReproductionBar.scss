@@ -17,13 +17,13 @@ $font: 'Raleway', sans-serif;
     font-family: $font;
     color: $text-color;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33.33%, 33.33%));
 }
 
 .song-playing{
     height: 100%;
-    width: 30%;
+
     display: flex;
     flex-direction: row;
     margin-left: 15px;
@@ -47,10 +47,78 @@ $font: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 14px;
+    font-weight: 600;
 }
 
 .song-playing-info > p {
     margin: 0;
     padding: 0;
-    font-size: 8px;
+    font-size: 10px;
+    color: $unselected-text-color;
+    font-weight: 600;
+}
+
+.heart{
+    margin-left: 30px;
+}
+
+.r-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+    color: $unselected-text-color;
+}
+
+
+.r-button:hover{
+    color: $text-color;
+}
+
+.rep-play-button{
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    font-size: 25px;
+    background-color: $unselected-text-color;
+}
+
+.rep-play-button:hover{
+    background-color: $text-color;
+}
+
+.rep-triangle{
+    margin-top: 1px;
+    margin-left: 3px;
+    font-size: 18px;
+}
+
+.volandsettings{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 25px;
+
+    color: $unselected-text-color;
+}
+
+.progress-bar{
+    width: 200px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #B3B3B3;
 }

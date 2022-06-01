@@ -8,9 +8,20 @@ body, html {
   margin-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
+  margin-left: 0;
 }
 
 .app{
   display: flex;
   justify-content: space-between;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }

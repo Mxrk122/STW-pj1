@@ -84,16 +84,74 @@ function App() {
 
   const sltwo = [
     {
-      portrait: 'https://www.mautorland.com/wp-content/uploads/2018/07/E126082D-DAE1-4B57-87D0-28C3E56A78BA.jpeg',
-      title: 'Hangar 18',
-      artist: 'Megadeth',
+      portrait: 'https://www.lahiguera.net/musicalia/artistas/olivia_rodrigo/disco/11184/tema/24537/olivia_rodrigo_drivers_license-portada.jpg',
+      title: 'Driver´s License',
+      artist: 'Olivia Rodrigo',
+    },
+    {
+      portrait: 'https://lineimg.omusic.com.tw/img/album/1465628.jpg?v=20210520093234',
+      title: 'BOY',
+      artist: 'Charlie Puth',
+    },
+    {
+      portrait: 'https://i.scdn.co/image/ab67616d0000b2735a35c70283f2d0ba2e3ae398',
+      title: 'Hombres de Maiz',
+      artist: 'Alux Nahual',
+    },
+    {
+      portrait: 'https://i0.wp.com/www.scienceofnoise.net/wp-content/uploads/2021/05/Tool_Lateralus.jpg',
+      title: 'Schism',
+      artist: 'Lateralus',
+    },
+    {
+      portrait: 'https://i.discogs.com/2qu9-ihqwqXnD4zWGCQU1G3haDlYXl_XkGXVSNym7Vo/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyODg2/MjUtMTM2MDc4MTc1/MC05Nzg0LmpwZWc.jpeg',
+      title: 'Metropolis Pt. 1',
+      artist: 'Dream Theater',
+    },
+    {
+      portrait: 'https://los40es00.epimg.net/los40/imagenes/los40classic/2014/11/1518134-bad-michael-jackson-orig-1.jpg',
+      title: 'Smooth Criminal',
+      artist: 'Michael Jakcson',
+    },
+  ]
+
+  const slthree = [
+    {
+      portrait: 'https://www.lahiguera.net/musicalia/artistas/olivia_rodrigo/disco/11184/tema/24537/olivia_rodrigo_drivers_license-portada.jpg',
+      title: 'Driver´s License',
+      artist: 'Olivia Rodrigo',
+    },
+    {
+      portrait: 'https://lineimg.omusic.com.tw/img/album/1465628.jpg?v=20210520093234',
+      title: 'BOY',
+      artist: 'Charlie Puth',
+    },
+    {
+      portrait: 'https://i.scdn.co/image/ab67616d0000b2735a35c70283f2d0ba2e3ae398',
+      title: 'Hombres de Maiz',
+      artist: 'Alux Nahual',
+    },
+    {
+      portrait: 'https://i0.wp.com/www.scienceofnoise.net/wp-content/uploads/2021/05/Tool_Lateralus.jpg',
+      title: 'Schism',
+      artist: 'Lateralus',
+    },
+    {
+      portrait: 'https://i.discogs.com/2qu9-ihqwqXnD4zWGCQU1G3haDlYXl_XkGXVSNym7Vo/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyODg2/MjUtMTM2MDc4MTc1/MC05Nzg0LmpwZWc.jpeg',
+      title: 'Metropolis Pt. 1',
+      artist: 'Dream Theater',
+    },
+    {
+      portrait: 'https://los40es00.epimg.net/los40/imagenes/los40classic/2014/11/1518134-bad-michael-jackson-orig-1.jpg',
+      title: 'Smooth Criminal',
+      artist: 'Michael Jakcson',
     },
   ]
 
   return (
-    <div className="app">
+    <div className="app noselect">
       <AsideBar />
-      <Content recentlyList={recentlyList} slone={slone} sltwo={sltwo} PlaySong={play} />
+      <Content recentlyList={recentlyList} slone={slone} sltwo={sltwo} slthree={slthree} PlaySong={play} />
       <FriendsList />
       <ReproductionBar songPlaying={playSong} />
     </div>

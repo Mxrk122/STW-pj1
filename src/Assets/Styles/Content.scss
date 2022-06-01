@@ -239,15 +239,15 @@ $font: 'Raleway', sans-serif;
 .cards-grid{
     margin-top: 15px;
     width: 100%;
-    height: 266px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(188px, 188px));
-    grid-template-rows: repeat(auto-fit, minmax(266px, 266px));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 180px));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 266px));
     grid-gap: 24px;
 }
 
 .song-card{
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: #181818;
@@ -303,8 +303,8 @@ $font: 'Raleway', sans-serif;
 //Condicion para que aparezca el botond e play cuando se le apsa por encima a todo el padre
 .song-card:hover > .play-button{
     position: absolute;
-    margin-top: 114px;
-    margin-left: 95px;
+    bottom: 10px;
+    right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
